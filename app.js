@@ -15,5 +15,5 @@ function connectName(){
         return;
     }
 
-    document.getElementById('result').innerText = 'succesfull your all information '
+    document.getElementById('result').innerText = 'Successfull Your All Information '
 }
