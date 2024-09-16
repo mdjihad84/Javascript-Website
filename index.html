@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical-website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 50%;
+        }
+        textarea {
+            padding: 10px;
+            margin: 10px;
+            width: 50%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            width: 50%;
+            margin-left: 24%;
+        }
+        button {
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 45px;
+            border: none;
+            font-size: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        .container {
+            width: 680px;
+            height: 645px;
+            padding-top: 40px;
+            margin-left: 26%;
+            border-radius: 10px;
+            background-color: bisque;
+            box-shadow: 1px 8px 14px 8px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MEDICAL FORM</h1>
+        <input id="text1" type="text" placeholder="Enter Your Name">
+        <input id="text2" type="text" placeholder="Enter your Old">
+        <input id="text3" type="text" placeholder="Enter Your Address">
+        <input id="text4" type="number" placeholder="Enter Your phone">
+        <textarea name="text5" id="text5" class="text" placeholder="About Your Problem"></textarea>
+        <input id="text6" type="text" placeholder="Enter Your Problem">
+        <input id="text7" type="number" placeholder="Total Tk/=">
+        <br>
+        <button onclick="connectName()">Submit</button>
+        <div id="result"></div>
+    </div>
+    <script src="./app.js"></script>
+
+  </body>
+</html>
