@@ -4,67 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical-form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        input {
-            padding: 10px;
-            margin: 10px;
-            width: 50%;
-        }
-        textarea {
-            padding: 10px;
-            margin: 10px;
-            width: 50%;
-        }
-        h1 {
-            text-align: center;
-            font-size: 30px;
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 50%;
-            margin-left: 24%;
-        }
-        button {
-            background-color: black;
-            color: white;
-            width: 300px;
-            height: 45px;
-            border: none;
-            font-size: 15px;
-            margin-top: 15px;
-            border-radius: 10px;
-        }
-        .container {
-            width: 610px;
-            height: 575px;
-            padding-top: 40px;
-            margin-left: 29%;
-            border-radius: 10px;
-            background-color: bisque;
-            box-shadow: 1px 8px 14px 8px;
-        }
-      </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
         <h1>MEDICAL FORM</h1>
-        <input id="text1" type="text" placeholder="Name">
-        <input id="text2" type="number" placeholder="Age">
-        <input id="text3" type="number" placeholder="Number">
-        <input id="text4" type="text" placeholder="Address">
-        <input id="text5" type="text" placeholder="problem">
-        <input id="text6" type="number" placeholder="Total Tk/=">
+        <input id="name" type="text" placeholder="Name">
+        <input id="age" type="number" placeholder="Age">
+        <input id="number" type="number" placeholder="Number">
+        <input id="address" type="text" placeholder="Address">
+        <input id="problem" type="text" placeholder="describe problem">
+        <input id="cost" type="number" placeholder="Total Tk">
         <br>
-        <button onclick="connectName()">Submit</button>
+        <button onclick="showData()">Submit</button>
         <div id="result"></div>
     </div>
     <script src="./app.js"></script>
-
   </body>
 </html>

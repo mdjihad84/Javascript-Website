@@ -1,24 +1,32 @@
-function connectName(){
-    const myfunction1 = document.getElementById('text1').value;
-    const myfunction2 = document.getElementById('text2').value;
-    const myfunction3 = document.getElementById('text3').value;
-    const myfunction4 = document.getElementById('text4').value;
-    const myfunction5 = document.getElementById('text5').value;
-    const myfunction6 = document.getElementById('text6').value;
+function showData(){
+    const patientName = document.getElementById('name').value;
+    const patientAge = document.getElementById('age').value;
+    const patientNumber = document.getElementById('number').value;
+    const patientAddress = document.getElementById('address').value;
+    const patientProblem = document.getElementById('problem').value;
+    const patientCost = document.getElementById('cost').value;
 
     const containsNumber = /\d/;
 
-    if (containsNumber.test(myfunction4) || containsNumber.test(myfunction5)){
+    if (containsNumber.test(patientName)){
         alert("Names should not contain numbers. Please enter a valid name.");
         return;
     }
 
-    if (myfunction1.trim() === '' || myfunction2.trim() === '') {
-        alert("Please enter both first and last name");
+    if (patientName.trim() === ' ' ) {
+        alert("Please enter valid name");
         return;
     }
 
-    const sum = myfunction1 + ' ' + myfunction2 + ' ' + myfunction3 + ' ' + myfunction4 + ' ' + myfunction5 + ' ' + myfunction6;
+    const resultDiv = document.getElementById('result');
 
-    document.getElementById('result').innerText = 'User fullname is ' + sum;
+    resultDiv.innerHTML = `
+        <h1> Name: ${patientName} </h1>
+        <h1>  Age: ${patientAge} </h1>
+        <h1> Number: ${patientNumber} </h1>
+        <h1> Address: ${patientAddress} </h1>
+        <h1> Problem: ${patientProblem} </h1>
+        <h1>Cost: ${patientCost}</h1>
+    `;
+
 }
