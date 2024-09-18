@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical-website</title>
+    <title>Medical-form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,10 +41,10 @@
             border-radius: 10px;
         }
         .container {
-            width: 680px;
-            height: 645px;
+            width: 610px;
+            height: 575px;
             padding-top: 40px;
-            margin-left: 26%;
+            margin-left: 29%;
             border-radius: 10px;
             background-color: bisque;
             box-shadow: 1px 8px 14px 8px;
@@ -54,13 +54,12 @@
 <body>
     <div class="container">
         <h1>MEDICAL FORM</h1>
-        <input id="text1" type="text" placeholder="Enter Your Name">
-        <input id="text2" type="text" placeholder="Enter Your Address">
-        <input id="text3" type="text" placeholder="Enter Your Problem">
-        <input id="text4" type="number" placeholder="Enter Your Number">
-        <input id="text5" type="number" placeholder="Enter your Age">
-        <input id="text6" type="text" placeholder="Enter About Your Problem">
-        <input id="text7" type="number" placeholder="Total Tk/=">
+        <input id="text1" type="text" placeholder="Name">
+        <input id="text2" type="number" placeholder="Age">
+        <input id="text3" type="number" placeholder="Number">
+        <input id="text4" type="text" placeholder="Address">
+        <input id="text5" type="text" placeholder="problem">
+        <input id="text6" type="number" placeholder="Total Tk/=">
         <br>
         <button onclick="connectName()">Submit</button>
         <div id="result"></div>

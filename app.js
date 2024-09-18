@@ -5,11 +5,10 @@ function connectName(){
     const myfunction4 = document.getElementById('text4').value;
     const myfunction5 = document.getElementById('text5').value;
     const myfunction6 = document.getElementById('text6').value;
-    const myfunction7 = document.getElementById('text7').value;
 
     const containsNumber = /\d/;
 
-    if (containsNumber.test(myfunction1) || containsNumber.test(myfunction2) || containsNumber.test(myfunction3)) {
+    if (containsNumber.test(myfunction4) || containsNumber.test(myfunction5)){
         alert("Names should not contain numbers. Please enter a valid name.");
         return;
     }
@@ -19,7 +18,7 @@ function connectName(){
         return;
     }
 
-    const sum = myfunction1 + ' ' + myfunction2 + ' ' + myfunction3 + ' ' + myfunction4 + ' ' + myfunction5 + ' ' + myfunction6 + ' ' + myfunction7;
+    const sum = myfunction1 + ' ' + myfunction2 + ' ' + myfunction3 + ' ' + myfunction4 + ' ' + myfunction5 + ' ' + myfunction6;
 
-    document.getElementById('result').innerText = 'User fullname is ' + sum
+    document.getElementById('result').innerText = 'User fullname is ' + sum;
 }
