@@ -35,7 +35,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
 }
-/* .container {
+.container {
     width: 610px;
     height: 575px;
     padding-top: 40px;
@@ -43,9 +43,10 @@ button {
     border-radius: 10px;
     background-color: bisque;
     box-shadow: 1px 8px 14px 8px;
-} */
+}
 
 #result {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
 }

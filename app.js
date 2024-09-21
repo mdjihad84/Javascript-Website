@@ -21,12 +21,12 @@ function showData(){
     const resultDiv = document.getElementById('result');
 
     resultDiv.innerHTML = `
-        <h1> Name: ${patientName} </h1>
-        <h1>  Age: ${patientAge} </h1>
-        <h1> Number: ${patientNumber} </h1>
-        <h1> Address: ${patientAddress} </h1>
-        <h1> Problem: ${patientProblem} </h1>
-        <h1>Cost: ${patientCost}</h1>
+        <h2> Name: ${patientName} </h2>
+        <h2>  Age: ${patientAge} </h2>
+        <h2> Number: ${patientNumber} </h2>
+        <h2> Address: ${patientAddress} </h2>
+        <h2> Problem: ${patientProblem} </h2>
+        <h2>Cost: ${patientCost}</h2>
     `;
 
 }
